@@ -1,0 +1,40 @@
+{
+  "name": "devshorts",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^3.10.0",
+    "@react-three/drei": "^9.58.4",
+    "@react-three/fiber": "^8.12.0",
+    "@splinetool/react-spline": "^2.2.6",
+    "@splinetool/runtime": "^0.9.273",
+    "framer-motion": "^7.6.5",
+    "gsap": "^3.11.3",
+    "maath": "^0.5.3",
+    "node-vibrant": "^3.2.1-alpha.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
+    "react-router-dom": "^6.9.0",
+    "react-scroll-horizontal": "^1.6.6",
+    "react-tilt": "^0.1.4",
+    "react-vertical-timeline-component": "^3.6.0",
+    "smooth-scrollbar": "^8.8.3",
+    "three": "^0.150.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "@vitejs/plugin-react": "^2.2.0",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.18",
+    "tailwindcss": "^3.2.2",
+    "vite": "^3.2.3"
+  }
+}
