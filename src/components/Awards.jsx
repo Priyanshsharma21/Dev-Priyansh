@@ -4,34 +4,32 @@ import { gsap, ScrollTrigger} from "gsap/all";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import { testimonials } from "../constants";
+import { awards } from "../constants";
 import { useAnimeContext } from '../context/animeContext.jsx'
 
 const FeedbackCard = ({
   index,
   testimonial,
   name,
-  designation,
   company,
   image,
+  link
 }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
     className='bg-black-200 card_text p-10 rounded-3xl xs:w-[320px] w-full'
   >
-    <p className='text-white font-black text-[48px]'>"</p>
+    <p className='text-white font-black text-[20px]'>{name}</p>
 
     <div className='mt-1'>
-      <p className='text-white tracking-wider text-[18px]'>{testimonial}</p>
+      <p className='text-slate-300 tracking-wider text-[18px]'>{testimonial}</p>
 
       <div className='mt-7 flex justify-between items-center gap-1'>
         <div className='flex-1 flex flex-col'>
-          <p className='text-white font-medium text-[16px]'>
-            <span className='blue-text-gradient'>@</span> {name}
-          </p>
-          <p className='mt-1 text-secondary text-[12px]'>
-            {designation}. {company}
-          </p>
+          <a href={link} target="_blank" rel="noopener noreferrer"  className='text-white font-medium text-[16px]'>
+            <span className='blue-text-gradient cursor-pointer'>@</span> {company}
+          </a>
+          
         </div>
 
         <img
@@ -46,7 +44,7 @@ const FeedbackCard = ({
 
 
 
-const Feedbacks = () => {
+const Awards = () => {
   const {setCurrentBG} = useAnimeContext()
   const testRef = useRef(null)
 
@@ -77,17 +75,16 @@ const Feedbacks = () => {
         className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
       >
         <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}>What others say</p>
-          <h2 className={styles.sectionHeadText}>Testimonials.</h2>
+          <h2 className={styles.sectionHeadText}>Honors & awards.</h2>
         </motion.div>
       </div>
       <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
-        {testimonials.map((testimonial, index) => (
-          <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
+        {awards.map((award, index) => (
+          <FeedbackCard key={award.name} index={index} {...award} />
         ))}
       </div>
     </div>
   )
 }
 
-export default SectionWrapper(Feedbacks, "");
+export default SectionWrapper(Awards, "");

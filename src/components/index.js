@@ -8,6 +8,8 @@ import Works from './Works';
 import Feedbacks from './Feedbacks';
 import Contact from './Contact';
 import Spinner from './Spinner';
+import LazyLoader from './LazyLoader';
+import Awards from './Awards';
 
 export {
   Hero,
@@ -22,5 +24,7 @@ export {
   BallCanvas, 
   ComputersCanvas, 
   StarsCanvas,
-  Spinner
+  Spinner,
+  LazyLoader,
+  Awards
 }

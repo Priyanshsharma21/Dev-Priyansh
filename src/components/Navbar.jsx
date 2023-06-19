@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
@@ -8,10 +8,13 @@ const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
+  const {linkRef} = useRef(null)
 
 
   useEffect(() => {
+
+    console.log(linkRef)
+
 
     const handleScroll = () => {
       const scrollTop = window.scrollY;
@@ -48,7 +51,7 @@ const Navbar = () => {
               window.scrollTo(0, 0);
             }}
           >
-            <p className='text-white text-[18px] font-bold cursor-pointer flex '>
+            <p ref={linkRef} className='text-white text-[18px] font-bold cursor-pointer flex '>
               Priyansh &nbsp;
               <span className='sm:block hidden'> | DevDose</span>
             </p>
@@ -58,6 +61,7 @@ const Navbar = () => {
 {/* desktop screen Nav */}
       <ul className='list-none hidden sm:flex flex-row gap-10'>
       <Link 
+      ref={linkRef}
       to="/project"
       onClick={() => {
               window.scrollTo(0, 0);
@@ -67,6 +71,7 @@ const Navbar = () => {
       </Link>
 
       <Link 
+      ref={linkRef}
       to="/play"
       onClick={() => {
               window.scrollTo(0, 0);
@@ -77,6 +82,7 @@ const Navbar = () => {
 
           {navLinks.map((nav) => (
             <li
+            ref={linkRef}
               key={nav.id}
               className={`${
                 active === nav.title ? "text-white" : "text-secondary"

@@ -14,6 +14,7 @@
     "@react-three/fiber": "^8.12.0",
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^0.9.273",
+    "chroma-js": "^2.4.2",
     "framer-motion": "^7.6.5",
     "gsap": "^3.11.3",
     "maath": "^0.5.3",

@@ -87,7 +87,7 @@ const Works = () => {
         scrub: true,
         pinSpacing: false,
         onEnter: () => {
-          setCurrentBG('#160505');
+          setCurrentBG('#795548');
           gsap.to(textRef.current, {
             color: '#282828',
             duration: 1
@@ -108,7 +108,7 @@ const Works = () => {
     <div ref={workRef}>
       <div variants={textVariant()}>
        <div className="flex justify-between">
-       <p  className={`${styles.sectionSubText} `}>My work</p>
+       <p  className={`${styles.sectionSubText} text-slate-100`}>My work</p>
        <Link to="/project" className={`${styles.sectionSubText} flex items-center`}>View More <AiOutlineArrowRight /></Link>
        </div>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
@@ -118,7 +118,7 @@ const Works = () => {
       <div className='w-full flex'>
         <p
           variants={fadeIn("", "", 0.1, 1)}
-          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+          className='mt-3 text-slate-300 text-[17px] max-w-3xl leading-[30px]'
         >
          Explore my Projects and discover how I turn complex problems into elegant solutions. Each project is a real-world example of my skills and expertise, providing a glimpse into my capabilities as a software developer. You'll find brief project descriptions, links to the code repositories, and live demos that showcase my ability to work with various technologies, effectively manage projects, and solve complex problems with ease.
         </p>

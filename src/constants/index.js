@@ -49,8 +49,7 @@ import {
   javed,
 } from "../assets";
 
-export const navLinks = [
-  {
+export const navLinks = [{
     id: "work",
     title: "Work",
   },
@@ -95,7 +94,7 @@ const technologies = [{
     name: "TypeScript",
     icon: typescript,
   },
- 
+
   {
     name: "React JS",
     icon: reactjs,
@@ -202,8 +201,85 @@ const testimonials = [{
     designation: "Front End Developer",
     image: javed,
   },
-];
+]
+
+
+
+
+const awards = [{
+    testimonial: "Won 4 milestone in Function Up for my projects - TikTube, Ukenko, Revu3.0 and Pexel AI and JavaScript Academy.",
+    name: "4X Milestone Function Up",
+    company: "FunctionUp",
+    link : "https://www.bing.com/search?q=function+up&cvid=12c0e22cf61e49e597b171e75c6cb6c2&aqs=edge..69i57j69i60l3j69i65j69i64.1453j0j1&FORM=ANAB01&PC=DCTS",
+    image: 'https://media.licdn.com/dms/image/C4D0BAQHn-mst7Jf8Pw/company-logo_200_200/0/1638195127235?e=1695254400&v=beta&t=WBXkAPNolHfHY03bxQGwpMreuK6tyiBc6npaLJWUcsc',
+  },
+  {
+    testimonial: "Won the 1st prize 🏆 in the esteemed JSM Awards, hosted by JavaScript Mastery. This highly acclaimed YouTube channel boasts a massive following of over 600k+ subscribers, vibrant and one of the biggest JavaScript community on internet.",
+    name: "Javascript Mastery Awards Winner",
+    company: "JavaScript Mastery",
+    link : "https://www.jsmastery.pro/",
+    image: 'https://www.jsmastery.pro/_next/static/media/jsmPro01.4c589afa.svg',
+  },
+  {
+    testimonial:"Won 1st prize 🏆 in India vs Nepal Under 14. Represented India in Pokhara. Two match series T20 against Nepal. (Indo-Nepal Cup)",
+    name: "U14 Cricket India vs Nepal 🥇",
+    company: "AGSPF Indore",
+    link : "https://www.facebook.com/jitendra.hirve.33/posts/pfbid02JzEdrofydD6hWK4KFunPPCYma1AYF1ozDxY7KrHihhkDE2yuDRVRUin2nSRundunl",
+    image: 'https://scontent.fbho2-1.fna.fbcdn.net/v/t31.18172-8/14242305_594994134020007_8062405353820865675_o.jpg?_nc_cat=101&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Y6Rtedb3R_oAX8alldf&_nc_ht=scontent.fbho2-1.fna&oh=00_AfAfJd9374ki_UEMtfb_rk_ET2thlQxbAhgN__B-jcA1vg&oe=64B7BEB3',
+  },
+]
+
+
+
 const projects = [{
+    name: "Javascript Academy - Learn Faster",
+    description: "JavaScript Academy is an Full Stack web application made using React18, Nodejs, Expressjs, Mongodb, Chakra UI, Ant Design, Framer Motion. It's an quick go through app where you will find notes snippets of various topics like Web, Blockchain, AI etc.",
+    tags: [{
+        name: "React18",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Expressjs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Mongodb",
+        color: "text-orange-400",
+      },
+    ],
+    image: 'https://image.lexica.art/full_jpg/11e74d52-a939-48e4-b930-da0b60cd0ef8',
+    source_code_link: "https://github.com/kml562/JavaScript-academy",
+    source_proj_link: "https://jsaclass.netlify.app/"
+  },
+  {
+    name: "lofi.dev - relax.chill.code",
+    description: "Lofi.dev is the ultimate productivity companion app that seamlessly blends ambient sounds and powerful productivity features to create an optimal work environment. The app integrates the popular Pomodoro technique, allowing you to set focused work sessions with a 25-minute timer, while the convenient note-taking feature helps you capture important thoughts and to-dos without disruption.",
+    tags: [{
+        name: "Next13",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TailwindCss",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Ant Design",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Cloudinary",
+        color: "text-orange-400",
+      },
+    ],
+    image: 'https://image.lexica.art/full_jpg/c07ff80e-eaaa-40eb-adb0-dfcdfd817fac',
+    source_code_link: "https://github.com/Priyanshsharma21/lofi.dev",
+    source_proj_link: "https://lofis.vercel.app/"
+  },
+  {
     name: "Mulabel - Play Your Music",
     description: "Mulabel is an web music application in which you can listen to any song in this world, explore top songs in world and near you, can watch videos, search favorite playlist, podcast, songs etc. It's an ultimate & only music app need.",
     tags: [{
@@ -224,32 +300,33 @@ const projects = [{
       },
     ],
     image: mulable,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Priyanshsharma21/MuLabel",
     source_proj_link: "https://mulabel.netlify.app/"
   },
+
   {
-    name: "PinZeal",
-    description: "Pinzeal is an full stack social media application for sharing images, illustration, gifs, Vector Art's, you can share ,save, comment, download and many more functionality in a single fully responsive app",
+    name: "REVU 3.0 - Ultimate Entertainment",
+    description: "REVU is ultimate OTT platform where you will get thousands of movies and shows. You can searched for a movie or show. you can get the details about the movie, the cast, and recommended movies. you can add movies to your watch latter list. You can see details about cast. You can watch trailer and book ticket of that movie or show. UI inspired from Netflix, Hulu, Disney. Tech Used - React18 (VITE), Ant Design, Tailwind CSS, Redux, Redux Toolkit, RTK Query, Framer Motion, Google OAuth Login (For Authentication and Authorization), TMDB API (For Movies and Shows Data) and many small utility libraries working behind the seances to make this Beautiful app possible.",
     tags: [{
         name: "React18",
         color: "blue-text-gradient",
       },
       {
-        name: "Sanity.io",
+        name: "Redux Toolkit",
         color: "green-text-gradient",
       },
       {
-        name: "Framer Motion",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
       {
-        name: "Tailwind CSS",
-        color: "text-purple-300",
+        name: "TMDB API",
+        color: "text-orange-400",
       },
     ],
-    image: pinzeal,
-    source_code_link: "https://github.com/Priyanshsharma21/PinZeal",
-    source_proj_link: "https://pinzeal.netlify.app/",
+    image: 'https://image.lexica.art/full_jpg/04297055-8b0b-4d6f-bc84-65ca13defa28',
+    source_code_link: "https://github.com/Priyanshsharma21/HULU",
+    source_proj_link: "https://muvue.netlify.app/"
   },
   {
     name: "Pexel.AI",
@@ -285,8 +362,57 @@ const projects = [{
     ],
     image: pexelai,
     source_code_link: "https://github.com/Priyanshsharma21/PEXEL-AI",
-    source_proj_link: "https://pexelai.netlify.app/",
+    source_proj_link: "https://pxlai.netlify.app/",
   },
+  {
+    name: "Upshot - Collage Event Manager",
+    description: "Upshot is an full stack web application, fully responsive made using new Next13, Mongodb, Nodejs, Expressjs, GSAP, Antdesign, Tailwind CSS and many small libraries serving different purposes like Saving the big images into cloud (cloudinary), saving passwords in secure manner - (Bcryptjs), Validator for validations etc.",
+    tags: [{
+        name: "Next13",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Nodejs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "ExpressJs",
+        color: "text-orange-400",
+      },
+    ],
+    image: 'https://image.lexica.art/full_jpg/2286e849-0527-4d18-b176-2ed5718eb828',
+    source_code_link: "https://github.com/Priyanshsharma21/Upshot",
+    source_proj_link: "https://upshot-client-ips.vercel.app/"
+  },
+  {
+    name: "PinZeal",
+    description: "Pinzeal is an full stack social media application for sharing images, illustration, gifs, Vector Art's, you can share ,save, comment, download and many more functionality in a single fully responsive app",
+    tags: [{
+        name: "React18",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Sanity.io",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Framer Motion",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "text-purple-300",
+      },
+    ],
+    image: pinzeal,
+    source_code_link: "https://github.com/Priyanshsharma21/PinZeal",
+    source_proj_link: "https://pinzeal.netlify.app/",
+  },
+
   {
     name: "DoTok",
     description: "An video sharing social media where you can upload, download, like, share, comment a video, can search artist and videos, get inspiration, video according to category, view shorts(reels) content",
@@ -330,7 +456,7 @@ const projects = [{
     ],
     image: ukenko,
     source_code_link: "https://github.com/Priyanshsharma21/Ukenko",
-    source_proj_link: "https://ukenko-fit.netlify.app/",
+    source_proj_link: "https://ukenko.netlify.app/",
   },
 
   {
@@ -373,6 +499,27 @@ const projects = [{
     image: blog,
     source_code_link: "https://github.com/Priyanshsharma21/Priyansh-Blog",
     source_proj_link: "https://priyansh-blog.vercel.app/",
+  },
+
+  {
+    name: "KashiCom",
+    description: "This is an full stack Ecommerce Website with stripe integration created using React and NextJS, Styling using Material UI and Motion Tracer",
+    tags: [{
+        name: "Nextjs",
+        color: "text-green-500",
+      },
+      {
+        name: "Stripe",
+        color: "text-blue-500",
+      },
+      {
+        name: "Context API",
+        color: "text-purple-500",
+      },
+    ],
+    image: 'https://image.lexica.art/full_jpg/1a9587d2-5207-4c0a-8f4f-16e7d29ab97e',
+    source_code_link: "https://github.com/Priyanshsharma21/KachiCom",
+    source_proj_link: "https://kachi-com.vercel.app/",
   },
 
   {
@@ -516,7 +663,7 @@ const moreProj = [{
       },
 
     ],
-    image:baba,
+    image: baba,
     source_code_link: "https://github.com/Priyanshsharma21/BabajiGPT",
     source_proj_link: "https://frontend-baba-gpt.vercel.app/",
   },
@@ -550,5 +697,6 @@ export {
   experiences,
   testimonials,
   projects,
-  moreProj
+  moreProj,
+  awards
 };

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -6,11 +6,13 @@ import {
 import { motion } from "framer-motion";
 
 import "react-vertical-timeline-component/style.min.css";
+import { gsap, ScrollTrigger} from "gsap/all";
 
 import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
+import { useAnimeContext } from '../context/animeContext.jsx'
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -59,11 +61,43 @@ const ExperienceCard = ({ experience }) => {
 
 
 const Experience = () => {
+  const {setCurrentBG} = useAnimeContext()
+  const expRef = useRef(null)
+  const textRef = useRef(null)
+
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: expRef.current,
+        start: "+=200 70%",
+        end: "+=00 60%",
+        scrub: true,
+        pinSpacing: false,
+        onEnter: () => {
+          setCurrentBG('#aa00ff');
+          gsap.to(textRef.current, {
+            color: '#282828',
+            duration: 1
+          })
+        },
+        onLeaveBack: () => {
+          setCurrentBG('#050816');
+          gsap.to(textRef.current, {
+            duration: 1
+          })
+        }
+      }
+    })
+  }, [])
+
   return (
-    <>
+    <div ref={expRef}>
 
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>
+        <p className={`${styles.sectionSubText} text-center text-slate-200`}>
           What I have done so far
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
@@ -82,7 +116,7 @@ const Experience = () => {
         </VerticalTimeline>
       </div>
     
-    </>
+    </div>
   )
 }
 

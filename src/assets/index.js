@@ -1,8 +1,8 @@
 import logo from "./logo.svg";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
+import backend from "./nodejs.png";
+import creator from "./create.png";
+import mobile from "./19_React-Native.png";
+import web from "./mern.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -61,6 +61,12 @@ import pep from './pep.jpg'
 import bargav from './bargava.jpg'
 import surbhi from './Create a high resolution artwork of Anime Girl is .jpg'
 import javed from './architecture photo modern fachwerk footbal field w.jpg'
+// import javed from './architecture photo modern fachwerk footbal field w.jpg'
+
+// import javed from './'
+// import javed from './architecture photo modern fachwerk footbal field w.jpg'
+// import javed from './architecture photo modern fachwerk footbal field w.jpg'
+// import javed from './architecture photo modern fachwerk footbal field w.jpg'
 
 
 
