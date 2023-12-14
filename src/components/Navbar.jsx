@@ -3,6 +3,12 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
+import { AiOutlineHome,AiFillLinkedin,AiFillGithub,AiFillInstagram,AiFillYoutube } from 'react-icons/ai'
+import { MdDeveloperMode } from 'react-icons/md'
+import { CgGames } from 'react-icons/cg'
+import { FiPhoneCall } from 'react-icons/fi'
+// import {  }
+
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -43,7 +49,7 @@ const Navbar = () => {
   >
     <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
 {/* logo */}
-      <Link
+      {/* <Link
             to='/'
             className='flex items-center gap-2'
             onClick={() => {
@@ -55,18 +61,29 @@ const Navbar = () => {
               Priyansh &nbsp;
               <span className='sm:block hidden'> | DevDose</span>
             </p>
-      </Link>
+      </Link> */}
 
 
 {/* desktop screen Nav */}
       <ul className='list-none hidden sm:flex flex-row gap-10'>
       <Link 
       ref={linkRef}
+      to="/"
+      onClick={() => {
+              window.scrollTo(0, 0);
+      }}
+      className="text-secondary nav_main_links">
+      Home
+      </Link>
+
+
+      <Link 
+      ref={linkRef}
       to="/project"
       onClick={() => {
               window.scrollTo(0, 0);
       }}
-      className="text-secondary">
+      className="text-secondary nav_main_links">
       Projects
       </Link>
 
@@ -76,7 +93,7 @@ const Navbar = () => {
       onClick={() => {
               window.scrollTo(0, 0);
       }}
-      className="text-secondary">
+      className="text-secondary nav_main_links">
       Playground
       </Link>
 
@@ -94,9 +111,28 @@ const Navbar = () => {
           ))}
       </ul>
 
+      <ul className='list-none hidden sm:flex flex-row gap-10'>
+            <div className="social_media flex">
+              <a href="https://www.linkedin.com/in/priyansh-sharma-7b9520223/" target="_blank" rel="noopener noreferrer" className="ml-5 social_icons">
+                <AiFillLinkedin />
+              </a>
+              <a href="https://github.com/Priyanshsharma21" target="_blank" rel="noopener noreferrer" className="ml-5 social_icons">
+                <AiFillGithub />
+              </a>
+              <a href="https://www.instagram.com/urdevdose/" target="_blank" rel="noopener noreferrer" className="ml-5 social_icons">
+                <AiFillInstagram />
+              </a>
+              <a href="https://youtube.com/@UrDevDose" target="_blank" rel="noopener noreferrer" className="ml-5 social_icons">
+                <AiFillYoutube />
+              </a>
+            </div>
+      </ul>
+
+
+
 
 {/* Mobile screen and Tablet Screen Nav */}
-      <div className='sm:hidden flex flex-1 justify-end items-center'>
+      {/* <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
             src={toggle ? close : menu}
             alt='menu'
@@ -142,7 +178,29 @@ const Navbar = () => {
               ))}
             </ul>
           </div>
+        </div> */}
+
+      <div className='sm:hidden flex flex-1 justify-end items-center fixed bottom-0 left-0 w-full p-5 main_mob_nav'>
+        <div className="menuItems flex justify-around w-full h-full">
+         <Link to={`/`} title="Home">
+          <AiOutlineHome  className="nav_mob_font"/>
+         </Link>
+
+         <Link to={`/project`} title="Projects">
+          <MdDeveloperMode  className="nav_mob_font"/>
+         </Link>
+
+         <Link to={`/play`} title="Playground">
+          <CgGames  className="nav_mob_font"/>
+         </Link>
+
+         <a href="#contact">
+          <FiPhoneCall className="nav_mob_font" />
+         </a>
+
         </div>
+      </div>
+
 
 
     </div>

@@ -1,11 +1,12 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas,Awards } from "./components";
+import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas,Awards,PsIntro} from "./components";
 import Project from "./pages/Project";
 import Scrollbar from 'smooth-scrollbar';
 import { useEffect, useState } from "react";
 import { useAnimeContext } from './context/animeContext.jsx'
 import { Playground } from "./pages";
 import { BsArrowUp } from 'react-icons/bs'
+import { Parallax } from 'react-parallax';
 
 
 
@@ -37,16 +38,18 @@ const App = () => {
     <div>
       <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
         <Navbar />
-        {/* <Hero /> */}
       </div>
       <Routes>
         <Route exact path="/" element={(
           <>
             <div className='relative z-0 main_section_ps' ref={appRef}>
               <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
-                <Navbar />
-                <Hero />
+                <Parallax blur={0} bgImage="../src/assets/bgp3.jpg" bgImageAlt="Main BB" strength={-200}>
+                  <Navbar />
+                  <Hero />
+                </Parallax>
               </div>
+              <PsIntro />
               <About />
               <Experience />
               <Tech />
@@ -72,7 +75,7 @@ const App = () => {
 
       {showBackToTop && (
         <button
-          className="fixed bottom-4 right-4 p-2 shadow cursor-pointer backToTop"
+          className="fixed bottom-20 right-4 p-2 shadow cursor-pointer backToTop"
           onClick={handleBackToTop}
         >
           <BsArrowUp />

@@ -140,11 +140,23 @@ const technologies = [{
 
 
 
-const experiences = [{
+const experiences = [
+  {
+    title: "Full Stack developer trainee",
+    company_name: "FunctionUp",
+    icon: 'https://media.licdn.com/dms/image/C4D0BAQHn-mst7Jf8Pw/company-logo_200_200/0/1638195127235?e=1698278400&v=beta&t=DTjywQsSbok3yOnkxQAsro9ex1Qa5BxpgjDeQAwicXk',
+    iconBg: "#ffffff",
+    date: "March 2023 - Present",
+    points: [
+      "Learned HTML, CSS, Javascript, Expressjs, Nodejs, Mongodb, AWS, Reactjs, Redis.",
+      "Achieved 8 Milestone Awards for Projects and Good Performance."
+    ],
+  },
+  {
     title: "React.js Developer",
     company_name: "Across The Globe",
     icon: atg,
-    iconBg: "#E6DEDD",
+    iconBg: "#ffffff",
     date: "Aug 2022 - Oct 2022",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
@@ -159,7 +171,7 @@ const experiences = [{
     title: "MERN Developer & Content Creator Freelancer",
     company_name: "Krayan Inc",
     icon: kryan,
-    iconBg: "#E6DEDD",
+    iconBg: "#ffffff",
     date: "Sept 2022 - Nov 2022",
     points: [
       "Made video content on different projects like (Icryoto, Telegram crypto Bot).",
@@ -168,6 +180,7 @@ const experiences = [{
       "Worked on data driven projects.",
     ],
   },
+  
   {
     title: "Web Developer",
     company_name: "Pepcoding",
@@ -206,9 +219,10 @@ const testimonials = [{
 
 
 
-const awards = [{
-    testimonial: "Won 4 milestone in Function Up for my projects - TikTube, Ukenko, Revu3.0 and Pexel AI and JavaScript Academy.",
-    name: "4X Milestone Function Up",
+const awards = [
+  {
+    testimonial: "Won 8 milestone in Function Up for my projects - TikTube, Ukenko, Revu3.0 and Pexel AI and JavaScript Academy, Sociomate, Pinzeal, Upshot.",
+    name: "8X Milestone Function Up",
     company: "FunctionUp",
     link : "https://www.bing.com/search?q=function+up&cvid=12c0e22cf61e49e597b171e75c6cb6c2&aqs=edge..69i57j69i60l3j69i65j69i64.1453j0j1&FORM=ANAB01&PC=DCTS",
     image: 'https://media.licdn.com/dms/image/C4D0BAQHn-mst7Jf8Pw/company-logo_200_200/0/1638195127235?e=1695254400&v=beta&t=WBXkAPNolHfHY03bxQGwpMreuK6tyiBc6npaLJWUcsc',
@@ -231,7 +245,44 @@ const awards = [{
 
 
 
-const projects = [{
+const projects = [
+  {
+    name: "Sociomate Let's Connect",
+    description: "SocioMate is a full-stack web application designed to connect people and facilitate social interaction. Features - User Authentication,Home Feed,User Profiles,Post Creation and Management,Post & User Search,Latest News",
+    tags: [{
+        name: "React(VITE)",
+        color: "text-green-500",
+      },
+      {
+        name: "Node",
+        color: "text-purple-500",
+      },
+      {
+        name: "Mongodb",
+        color: "text-pink-500",
+      },
+      {
+        name: "Express",
+        color: "text-yellow-500",
+      },
+      {
+        name: "Tailwind",
+        color: "text-green-500",
+      },
+      {
+        name: "AntDesign",
+        color: "text-slate-500",
+      },
+      {
+        name: "OAuth & REST API's",
+        color: "text-green-500",
+      },
+    ],
+    image: 'https://image.lexica.art/md2/0bb54688-f58d-43c2-9af6-167d014c3b5b',
+    source_code_link: "https://github.com/Priyanshsharma21/Sociomate",
+    source_proj_link: "https://sociomate.netlify.app/",
+  },
+  {
     name: "Javascript Academy - Learn Faster",
     description: "JavaScript Academy is an Full Stack web application made using React18, Nodejs, Expressjs, Mongodb, Chakra UI, Ant Design, Framer Motion. It's an quick go through app where you will find notes snippets of various topics like Web, Blockchain, AI etc.",
     tags: [{
@@ -365,29 +416,27 @@ const projects = [{
     source_proj_link: "https://pxlai.netlify.app/",
   },
   {
-    name: "Upshot - Collage Event Manager",
-    description: "Upshot is an full stack web application, fully responsive made using new Next13, Mongodb, Nodejs, Expressjs, GSAP, Antdesign, Tailwind CSS and many small libraries serving different purposes like Saving the big images into cloud (cloudinary), saving passwords in secure manner - (Bcryptjs), Validator for validations etc.",
+    name: "Ukenko",
+    description: "Fitness app in which you can find 1000's of workout with proper guide and tutorial videos, motivation quotes, fitness calculator and have amazing UI, very Minimal and effective website.",
     tags: [{
-        name: "Next13",
-        color: "blue-text-gradient",
+        name: "React18",
+        color: "text-green-500",
       },
       {
-        name: "Mongodb",
-        color: "green-text-gradient",
+        name: "Material UI",
+        color: "text-blue-500",
       },
       {
-        name: "Nodejs",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "ExpressJs",
-        color: "text-orange-400",
+        name: "Rapid API",
+        color: "text-purple-500",
       },
     ],
-    image: 'https://image.lexica.art/full_jpg/2286e849-0527-4d18-b176-2ed5718eb828',
-    source_code_link: "https://github.com/Priyanshsharma21/Upshot",
-    source_proj_link: "https://upshot-client-ips.vercel.app/"
+    image: ukenko,
+    source_code_link: "https://github.com/Priyanshsharma21/Ukenko",
+    source_proj_link: "https://ukenko.netlify.app/",
   },
+
+  
   {
     name: "PinZeal",
     description: "Pinzeal is an full stack social media application for sharing images, illustration, gifs, Vector Art's, you can share ,save, comment, download and many more functionality in a single fully responsive app",
@@ -439,26 +488,89 @@ const projects = [{
   },
 
   {
-    name: "Ukenko",
-    description: "Fitness app in which you can find 1000's of workout with proper guide and tutorial videos, motivation quotes, fitness calculator and have amazing UI, very Minimal and effective website.",
+    name: "ATG World",
+    description: "Website with thousands of daily visitors, Made homepage, post details page, assesment platform, admin panel, free and paid course page. Contribution is in Private Repo.",
     tags: [{
-        name: "React18",
+        name: "Rect",
         color: "text-green-500",
       },
       {
-        name: "Material UI",
+        name: "HTML",
         color: "text-blue-500",
       },
       {
-        name: "Rapid API",
+        name: "CSS",
         color: "text-purple-500",
       },
+      {
+        name: "PHP",
+        color: "text-yellow-500",
+      },
+      {
+        name: "Javascript",
+        color: "text-yellow-500",
+      },
+      {
+        name: "Antdesign",
+        color: "text-yellow-500",
+      },
     ],
-    image: ukenko,
-    source_code_link: "https://github.com/Priyanshsharma21/Ukenko",
-    source_proj_link: "https://ukenko.netlify.app/",
+    image: 'https://th.bing.com/th/id/OIP.-YLhNVavkli2tMaJ5GV2UwAAAA?w=177&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7',
+    source_code_link: "https://github.com/Priyanshsharma21?tab=repositories",
+    source_proj_link: "https://www.atg.world/user-dashboard",
   },
 
+
+ 
+
+  {
+    name: "Libra Analytics",
+    description: "Official website of libra analytics, an data driven AIML, and analytics startUp in bangaluru",
+    tags: [{
+        name: "Reactjs",
+        color: "text-green-500",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "text-purple-500",
+      },
+      {
+        name: "Framer Motion",
+        color: "text-yellow-500",
+      },
+    ],
+    image: libra,
+    source_code_link: "https://github.com/Priyanshsharma21/Libra-Analytics",
+    source_proj_link: "https://www.libraanalytics.ai/",
+  },
+
+
+  {
+    name: "Upshot - Collage Event Manager",
+    description: "Upshot is an full stack web application, fully responsive made using new Next13, Mongodb, Nodejs, Expressjs, GSAP, Antdesign, Tailwind CSS and many small libraries serving different purposes like Saving the big images into cloud (cloudinary), saving passwords in secure manner - (Bcryptjs), Validator for validations etc.",
+    tags: [{
+        name: "Next13",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Nodejs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "ExpressJs",
+        color: "text-orange-400",
+      },
+    ],
+    image: 'https://image.lexica.art/full_jpg/2286e849-0527-4d18-b176-2ed5718eb828',
+    source_code_link: "https://github.com/Priyanshsharma21/Upshot",
+    source_proj_link: "https://upshot-client-ips.vercel.app/"
+  },
+
+  
   {
     name: "Aashayein",
     description: "Aashayein is a web 3.0 crowd funding web and super mobile responsive application. All the users can donate Ethereum using MetaMask, Backend is on Third Web, Solidity and Frontend is ReactJS and its various library like Tailwind, Context API etc.",
@@ -523,6 +635,27 @@ const projects = [{
   },
 
   {
+    name: "YTranscript",
+    description: "Made using Next13, TailwindCSS, Rapid API (Youtube transcript API). Enter youtube URL and get transcript of that video.",
+    tags: [{
+        name: "Next13",
+        color: "text-green-500",
+      },
+      {
+        name: "Tailwind",
+        color: "text-blue-500",
+      },
+      {
+        name: "Rapid API (YTranscript API)",
+        color: "text-purple-500",
+      },
+    ],
+    image: 'https://image.lexica.art/md2/9f52e3a2-5ab1-4439-a4e6-277df5999403',
+    source_code_link: "https://github.com/Priyanshsharma21/UAE-R-State",
+    source_proj_link: "https://yt-transcript-five.vercel.app/",
+  },
+
+  {
     name: "UAE-Rilms (Real State App)",
     description: "An web app build using next.js, react.js, API (UAE real state), Material UI, Google Map, Framer Motion. You can search, filter rental or buy best property from here.",
     tags: [{
@@ -547,26 +680,7 @@ const projects = [{
     source_proj_link: "https://uae-r-state.vercel.app/",
   },
 
-  {
-    name: "Libra Analytics",
-    description: "Official website of libra analytics, an data driven AIML, and analytics startUp in bangaluru",
-    tags: [{
-        name: "Reactjs",
-        color: "text-green-500",
-      },
-      {
-        name: "Tailwind CSS",
-        color: "text-purple-500",
-      },
-      {
-        name: "Framer Motion",
-        color: "text-yellow-500",
-      },
-    ],
-    image: libra,
-    source_code_link: "https://github.com/Priyanshsharma21/Libra-Analytics",
-    source_proj_link: "https://www.libraanalytics.ai/",
-  },
+
 
   {
     name: "ICrypto",
@@ -616,6 +730,33 @@ const projects = [{
     image: tiktube,
     source_code_link: "https://github.com/Priyanshsharma21/TikTube",
     source_proj_link: "https://tiktube.netlify.app/",
+  },
+
+
+  {
+    name: "Dhaga - Personal Thread",
+    description: "Made using Reactjs, ContextAPI, useReducer, Local Storage. Take Notes, Write your own Journals. Simple Minimal design.",
+
+    tags: [{
+        name: "React18",
+        color: "text-green-500",
+      },
+      {
+        name: "Context API",
+        color: "text-purple-500",
+      },
+      {
+        name: "useReducer",
+        color: "text-yellow-500",
+      },
+      {
+        name: "Local Storage",
+        color: "text-red-500",
+      },
+    ],
+    image: 'https://image.lexica.art/md2/27ae980e-6660-4eb2-8c7d-e6add1541a82',
+    source_code_link: "https://github.com/Priyanshsharma21/Calci/tree/dhaga",
+    source_proj_link: "https://dhaga.netlify.app/",
   },
 
 

@@ -13,7 +13,6 @@ export const AnimeProvider = ({ children }) => {
       const firstColor = currentBG;
       const secondColor = chroma(firstColor).darken().hex();
       const thirdColor = chroma(firstColor).brighten().hex();
-      const forthColor = chroma(firstColor).darken().hex();
 
 
       return `linear-gradient(to right, ${firstColor},${thirdColor}, ${secondColor})`;

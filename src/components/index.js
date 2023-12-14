@@ -10,7 +10,7 @@ import Contact from './Contact';
 import Spinner from './Spinner';
 import LazyLoader from './LazyLoader';
 import Awards from './Awards';
-
+import PsIntro from './PsIntro'
 export {
   Hero,
   Navbar,
@@ -26,5 +26,6 @@ export {
   StarsCanvas,
   Spinner,
   LazyLoader,
-  Awards
+  Awards,
+  PsIntro
 }

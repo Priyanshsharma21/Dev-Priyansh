@@ -265,6 +265,15 @@ body {
   color: transparent;
 }
 
+.nav_main_links{
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.nav_main_links:hover{
+  color: white;
+}
+
 .mern {
   /* -webkit-text-stroke: 0.7px rgb(0, 255, 102);  */
   color: rgb(0, 255, 102);
@@ -272,7 +281,7 @@ body {
 
 .content {
   /* -webkit-text-stroke: 0.7px rgb(179, 38, 255);   */
-  color: rgb(179, 38, 255);
+  color: rgb(255, 213, 0);
 }
 
 .three {
@@ -517,6 +526,15 @@ backdrop-filter: blur(11px);
     /* position: absolute; */
   }
 
+  .instruction{
+    width: auto;
+    height: auto;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+  }
+
   .head_wrap{
     height: max-content;
   }
@@ -524,6 +542,7 @@ backdrop-filter: blur(11px);
   .make_me_flex{
     display: flex;
     flex-direction: column;
+    top: 4rem;
   }
 
   .dev_ps{
@@ -541,3 +560,57 @@ backdrop-filter: blur(11px);
 }
 
 
+
+
+
+.nav_mob_font{
+  font-size: 2rem;
+}
+
+.main_mob_nav{
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.03);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7px);
+-webkit-backdrop-filter: blur(7px);
+}
+
+
+.social_icons{
+  transition: all 0.3s linear;
+}
+
+.social_icons:hover{
+  color: rgba(255, 255, 255, 0.751);
+}
+
+.heroSectionContainer{
+  position: sticky;
+  top: 0vh;
+  z-index: 100;
+}
+
+
+@media (max-width:700px){
+  .ps_header{
+    display: none;
+  }
+}
+
+
+.ps_header{
+  height: 670vh;
+  width: 100%;
+  background: #000;
+}
+
+.header_main_ps{
+  background: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
